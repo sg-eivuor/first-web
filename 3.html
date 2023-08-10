@@ -20,7 +20,20 @@
         document.querySelector('a').style.color = 'black';
     ">
 
-
+    <input type="button" value="night" onclick="
+        var target = document.querySelector('body')
+        if (this.value === 'night'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            document.querySelector('a').style.color = 'yellow';
+            this.value = 'day';
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            document.querySelector('a').style.color = 'black';
+            this.value = 'night';
+        }
+    ">
 
     <div id="grid">
 
@@ -46,6 +59,21 @@ Dolor enim et amet occaecat nisi excepteur nisi deserunt cillum laborum veniam e
 Id laboris laborum Lorem aute nisi ex non amet anim consequat cillum laboris ipsum. Ullamco occaecat pariatur aute tempor exercitation ex et amet consequat ad duis tempor velit. Ut ut ipsum reprehenderit nulla reprehenderit ipsum proident nostrud elit labore. Nostrud adipisicing non aute fugiat ea consectetur laboris. Lorem quis velit laboris pariatur laboris eiusmod pariatur velit consectetur. Velit sit do ipsum pariatur tempor incididunt consequat quis sit proident eiusmod laboris.
     </div>
     </div>
+
+    <input type="button" value="night" onclick="
+        if (this.value === 'night'){
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            document.querySelector('a').style.color = 'red';
+            this.value = 'day';
+        } else {
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            document.querySelector('a').style.color = 'black';
+            this.value = 'night';
+        }
+    ">
+
 
 <input type="checkbox">
 
