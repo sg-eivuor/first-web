@@ -3,29 +3,28 @@
 <head>
     <title>WEB1 - html</title>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <script src="ajax.js"></script>
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-        <li><a href="1.html">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
+    <ol id="nav">
+        
     </ol>
 
+    <article></article>
     <p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
     </p>
-
+    <input type="button" value="p-color" onclick="pColorChange(this)">
+    <input type="text" value="" placeholder="이름을 입력하세요.">    
     <h2>WEB</h1>
-    <p>월드 와이드 웹(World Wide Web, WWW, W3)은 인터넷에 연결된 컴퓨터를 통해 사람들이 정보를 공유할 수 있는 전 세계적인 정보 공간을 말한다. 간단히 웹(the Web)이라 부르는 경우가 많다. 이
-    용어는 인터넷과 동의어로 쓰이는 경우가 많으나 엄격히 말해 서로 다른 개념이다. 웹은 전자 메일과 같이 인터넷 상에서 동작하는 하나의 서비스일 뿐이다. 그러나 1993년 이래로 웹은 인터넷 구조의 절대적 위치를
-    차지하고 있다.
-    </p>
-
+    <p class="paragraph" data-color="red">월드 와이드 웹(World Wide Web, WWW, W3)은 인터넷에 연결된 컴퓨터를 통해 사람들이 정보를 공유할 수 있는 전 세계적인 정보 공간을 말한다.</p>
+    <p class="paragraph" data-color="yellow">간단히 웹(the Web)이라 부르는 경우가 많다.</p>
+    <p class="paragraph" data-color="green">이 용어는 인터넷과 동의어로 쓰이는 경우가 많으나 엄격히 말해 서로 다른 개념이다.</p>
+    <p class="paragraph" data-color="blue">웹은 전자 메일과 같이 인터넷 상에서 동작하는 하나의 서비스일 뿐이다. </p>
+    <p class="paragraph" data-color="gray">그러나 1993년 이래로 웹은 인터넷 구조의 절대적 위치를 차지하고 있다.</p>
     <p style="margin-top: 40px;">This is some text in a paragraph.</p>
     <img src="img.jpg" width="100%">
 </body>

@@ -45,3 +45,17 @@ function nightDayHandler(self){
         Links.setColor('blue');
     }
 }
+
+function pColorChange(self) {
+    var paragraphs = document.querySelectorAll('p.paragraph');
+    if (self.value === 'p-color') {
+        for (let paragraph of paragraphs) {
+            let color = paragraph.dataset.color
+            paragraph.style.color = color
+            self.value = 'become-black'
+        }
+    } else {
+        $('p.paragraph').css('color', 'black');
+        self.value = 'p-color'
+    }
+}
