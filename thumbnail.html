@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .thumbnail{
+            width: 150px;
+            height:150px;
+            margin:10px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: gray;
+            background-position: center center;
+            border: 5px solid black;
+            transition: opacity .4s ease-in-out;
+        }
+        .thumbnail.round{
+            border-radius: 10%;
+        }
+        .thumbnail.circle{
+            border-radius: 50%;
+        }
+        .thumbnail:not(:hover){
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="thumbnail" style="background-image: url('image/eunchae.jpeg');"></div>
+    <div class="thumbnail round" style="background-image: url('image/eunchae.jpeg');"></div>
+    <div class="thumbnail circle" style="background-image: url('image/eunchae.jpeg');"></div>
+    <img src="image/eunchae.jpeg" alt="" style="width:100%">
+</body>
+</html>

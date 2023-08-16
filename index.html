@@ -3,6 +3,8 @@
 <head>
     <title>WEB1 - html</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="thumbnail.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="colors.js"></script>
     <script src="ajax.js"></script>
@@ -10,11 +12,17 @@
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol id="nav">
-        
-    </ol>
+    <ol id="nav"></ol>
+    
+    <a class="btn blue" href="#blue">blue</a>
+    <a class="btn red" href="#red">red</a>
 
     <article></article>
+
+    <div class="thumbnail" style="background-image: url('image/eunchae.jpeg');"></div>
+    <div class="thumbnail round" style="background-image: url('image/eunchae.jpeg');"></div>
+    <div class="thumbnail circle" style="background-image: url('image/eunchae.jpeg');"></div>
+
     <p>
     </p>
     <input type="button" value="p-color" onclick="pColorChange(this)">
